@@ -16,4 +16,9 @@ public class Meal {
                 .reduce((Float::sum))
                 .orElse(-1f);
     }
+
+    public void showItems() {
+        items.stream().forEach( item -> System.out.println
+                ("Item:" + item.name() + ", Packing:" + item.packing().pack() +", Price:" + item.price()));
+    }
 }
