@@ -10,6 +10,9 @@ public class InnerClassSingleton {
         return SingletonHolder.INSTANCE;
     }
 
+	//私有构造方法
+	private InnerClassSingleton(){}
+
     private static class SingletonHolder {
         private static final InnerClassSingleton INSTANCE = new InnerClassSingleton();
     }
